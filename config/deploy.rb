@@ -2,7 +2,7 @@
 lock "~> 3.14.1"
 
 set :application, "chase"
-set :repo_url, "git@github.com:wangminyi/chase.git"
+set :repo_url, "git@github.com:woleonwang/chase.git"
 set :branch, "main"
 
 # Default branch is :master
@@ -39,7 +39,7 @@ set :branch, "main"
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
 
-append :linked_files, 'config/database.yml', 'config/secrets.yml', 'config/application.yml'
+append :linked_files, "config/database.yml", "config/secrets.yml", "config/application.yml"
 
 LINKED_DIRS = %w(
   log
@@ -55,5 +55,5 @@ append :linked_dirs, *LINKED_DIRS
 
 set :keep_releases, 5
 
-set :rbenv_custom_path, '/root/.rbenv'
-set :rbenv_ruby, '2.4.1'
+set :rbenv_custom_path, "/root/.rbenv"
+set :rbenv_ruby, "2.4.1"
