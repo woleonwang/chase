@@ -1,0 +1,25 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4
+  collation: utf8mb4_general_ci
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  # <<: *default
+  # host: rm-uf6y74h9745foui901o.mysql.rds.aliyuncs.com
+  # username: teddy
+  # password: teddy@Lei
+  # database: landd
+  <<: *default
+  host: 127.0.0.1
+  username: root
+  password: 123456
+  database: landd
+
+production:
+  <<: *default
+  host: rm-uf6w6jz6jm5yiauca8o.mysql.rds.aliyuncs.com
+  username: teddy
+  password: teddy@Lei
+  database: landd

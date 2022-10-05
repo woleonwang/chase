@@ -1,0 +1,9 @@
+aliyun_bucket: travo-dev
+aliyun_region: cn-shanghai
+aliyun_host: https://travo-dev.oss-cn-shanghai.aliyuncs.com
+
+frontend_host: "http://localhost:3001"
+
+# aliyun_bucket: travo-sg
+# aliyun_region: ap-southeast-1
+# aliyun_host: https://travo-sg.oss-ap-southeast-1.aliyuncs.com

@@ -1,0 +1,2 @@
+class BcSkill < ApplicationRecord
+end
