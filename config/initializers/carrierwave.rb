@@ -1,7 +1,7 @@
 CarrierWave.configure do |config|
   config.storage = :aliyun
-  config.aliyun_access_key_id = "LTAIlxMQfi8wn2yT"
-  config.aliyun_access_key_secret = "v1jnZYKE9dyqDXFyixXNbEpIO8iu9v"
+  config.aliyun_access_key_id = ENV["aliyun_access_key_id"]
+  config.aliyun_access_key_secret = ENV["aliyun_access_key_secret"]
   # 你需要在 Aliyun OSS 上面提前创建一个 Bucket
   # You must create a Bucket on Alicloud OSS first.
   config.aliyun_bucket = ENV["aliyun_bucket"]
