@@ -40,4 +40,12 @@ Rails.application.routes.draw do
   resources :upload_files, only: [:create]
 
   resources :recruiter_forms, only: [:create]
+
+  resources :recruiters do
+    collection do
+      post :sign_up
+      post :sign_in_by_code
+      post :send_verification_code
+    end
+  end
 end

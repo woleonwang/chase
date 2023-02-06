@@ -1,9 +1,5 @@
 # encoding: utf-8
 class RecruiterFormsController < ApplicationController
-  skip_before_action :require_user, only: [
-                                      :create,
-                                    ]
-
   def create
     fields = params.permit(
       :company,

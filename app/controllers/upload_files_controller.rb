@@ -1,9 +1,5 @@
 # encoding: utf-8
 class UploadFilesController < ApplicationController
-  skip_before_action :require_user, only: [
-                                      :create,
-                                    ]
-
   def create
     fields = params.permit(
       :file

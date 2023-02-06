@@ -1,10 +1,5 @@
 # encoding: utf-8
 class InterviewReportsController < ApplicationController
-  skip_before_action :require_user, only: [
-                                      :create,
-                                      :show,
-                                    ]
-
   def create
     user = User.find(params[:user_id])
 

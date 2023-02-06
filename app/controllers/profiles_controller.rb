@@ -1,5 +1,7 @@
 # encoding: utf-8
 class ProfilesController < ApplicationController
+  before_action :require_user
+
   def detail
     locale = params[:locale] || "zh"
     render json: {

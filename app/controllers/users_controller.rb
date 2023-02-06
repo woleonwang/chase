@@ -1,5 +1,7 @@
 # encoding: utf-8
 class UsersController < ApplicationController
+  before_action :require_user
+
   skip_before_action :require_user, only: [
                                       :send_verification_code,
                                       :sign_up,

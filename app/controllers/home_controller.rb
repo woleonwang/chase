@@ -1,6 +1,4 @@
 class HomeController < ApplicationController
-  skip_before_action :require_user, only: [:helloworld]
-
   def helloworld
     render plain: "hello world", status: 500
   end
